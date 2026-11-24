@@ -1,0 +1,27 @@
+[
+  {
+    "skills": ["checking-grpc-keepalive"],
+    "query": "Our inventory watch stream dies after about a minute with 'received prior goaway: code: ENHANCE_YOUR_CALM, debug data: too_many_pings'. The client and server are in this repo. Why?",
+    "expected_behavior": [
+      "Runs run.sh on the client and server folders",
+      "Explains KA101 with the client's Time, the server's MinTime (5m when no EnforcementPolicy is set) and the file:line of each",
+      "Proposes lowering the server's MinTime to the client's Time or raising the client's Time, without editing files unasked"
+    ]
+  },
+  {
+    "skills": ["checking-grpc-keepalive"],
+    "query": "I already set PermitWithoutStream: true in the server's EnforcementPolicy and idle connections still get too_many_pings. What's missing?",
+    "expected_behavior": [
+      "Runs run.sh on the code",
+      "Explains that MinTime left at 0 means 5 minutes, so it must be set too"
+    ]
+  },
+  {
+    "skills": ["checking-grpc-keepalive"],
+    "query": "toomanypings exited 3 on our service. Are our keepalive settings fine?",
+    "expected_behavior": [
+      "Says exit 3 means there is no result, so it can't say the settings are fine",
+      "Reads the error and fixes the input, such as passing the client's folder or a file that isn't broken"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "toomanypings-marketplace",
+  "description": "Marketplace for toomanypings, which finds grpc-go keepalive settings that end in GOAWAY ENHANCE_YOUR_CALM too_many_pings.",
+  "owner": {
+    "name": "Giulliano Macedo"
+  },
+  "plugins": [
+    {
+      "name": "toomanypings",
+      "source": "./plugin",
+      "description": "Compare grpc-go client keepalive settings with server enforcement policies in Go source, and find clients the server will disconnect with too_many_pings."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "toomanypings",
+  "version": "0.1.0",
+  "description": "Find grpc-go clients whose keepalive pings the server punishes with GOAWAY ENHANCE_YOUR_CALM too_many_pings: client Time below the server's EnforcementPolicy MinTime, and PermitWithoutStream pings the server doesn't permit. Reads Go source offline.",
+  "author": {
+    "name": "Giulliano Macedo",
+    "url": "https://github.com/GillMacedo"
+  },
+  "homepage": "https://github.com/GillMacedo/toomanypings",
+  "repository": "https://github.com/GillMacedo/toomanypings",
+  "license": "MIT",
+  "keywords": ["grpc", "grpc-go", "keepalive", "too-many-pings", "enhance-your-calm", "goaway", "go", "lint"]
+}
